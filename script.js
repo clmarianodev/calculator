@@ -84,7 +84,6 @@ document.querySelectorAll(".buttons button").forEach((button) => {
         }
         display.value = result;
 
-        // Easter egg: 1 + 1
         if (num1 === 1 && num2 === 1 && operator === "+") {
           music.play();
           typeLyrics();
@@ -94,7 +93,7 @@ document.querySelectorAll(".buttons button").forEach((button) => {
         num1 = null;
       }
     } else {
-      // operator
+
       num1 = parseFloat(display.value);
       operator = val;
       waitingForSecond = true;
